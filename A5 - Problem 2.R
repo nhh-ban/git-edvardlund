@@ -23,6 +23,20 @@ variable_names <-
   str_split(string = raw_file[13], pattern = "\\|") %>% 
   unlist() %>% 
   str_trim()
-variable_names
 
+# Separating the values in the dataset with "," 
+comma_separated_values <- 
+  raw_file[L+1:796] %>% 
+  gsub("\\|", ",", .) %>% 
+  gsub(" ", "", .)
 
+# Adding the variable names 
+comma_separated_values_with_names <- 
+  c(paste(variable_names, collapse = ","),
+    comma_separated_values)
+
+# Creating a new CSV file
+cat(comma_separated_values_with_names, sep = "\n", file = "galaxies.csv") 
+
+# Reading the file back as a normal csv-file
+galaxies <- read_csv("galaxies.csv")
