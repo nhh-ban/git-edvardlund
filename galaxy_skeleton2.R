@@ -9,6 +9,7 @@ library(tidyverse)    # Contains most of what we need.
 # Read the entire data file into memory using the readLines()-function. Use the
 # URL direcly or read the data from the local file that is in the repository.
 
+
 # The readLines()-function puts each line into a separate element in a character
 # vector. Looking at ?readLines it seems that we only need to provide one
 # argument: the "connection", or in other words the location of the text file.
