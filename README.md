@@ -4,7 +4,7 @@ This is the first assignment in BAN400. As you know -- given that you have come 
 
 **Date:** 28.09.2023 
 
-**Name:** Edvard Lund
+**Name:** Edvard Gjulem Lund
 
 **Student number:** S184994
 
