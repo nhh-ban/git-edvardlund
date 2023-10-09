@@ -44,7 +44,7 @@ galaxies <- read_csv("galaxies.csv")
 
 # Problem 3 ----
 
-# Creating a plot showing distribution of Galaxy Diameter
+# Creating a plot showing distribution of Galaxy Diameter.
 
 galaxies %>% 
   ggplot(aes(x = a_26)) +
