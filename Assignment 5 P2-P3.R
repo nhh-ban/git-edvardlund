@@ -40,3 +40,16 @@ cat(comma_separated_values_with_names, sep = "\n", file = "galaxies.csv")
 
 # Reading the file back as a normal csv-file
 galaxies <- read_csv("galaxies.csv")
+
+
+# Problem 3 ----
+
+# Creating a plot showing distribution of Galaxy Diameter
+
+galaxies %>% 
+  ggplot(aes(x = a_26)) +
+  geom_histogram(binwidth = 0.2, fill = "blue", color = "black", alpha = 0.7) + 
+  labs(title = "Distribution of Galaxy Diameter",
+       x = "Diameter (kpc)", 
+       y = "Number of Galaxies") +
+  theme_minimal()
